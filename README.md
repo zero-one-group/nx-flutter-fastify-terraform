@@ -2,6 +2,135 @@
 
 This project was generated using [Nx](https://nx.dev).
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
-
 🔎 **Smart, Fast and Extensible Build System**
+
+<br />
+<p align="center">
+  <h3 align="center">Flutter with Fastify on Nx</h3>
+
+  <p align="center">
+  	An Example Monorepo Project
+  </p>
+</p>
+
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#built-with">Built With</a>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a>
+      <ul>
+        <li><a href="#mobile">omnichannel</a></li>
+        <li><a href="#api">api</a></li>
+      </ul>
+    </li>
+  </ol>
+</details>
+
+<!-- ABOUT THE PROJECT -->
+
+### Built With
+
+Please Read all the documentation first before getting started.
+
+- [Nx](https://nx.dev/)
+- [Nx-React](https://nx.dev/react)
+- [Nx-Node](https://nx.dev/node)
+- [Kysely](https://github.com/koskimas/kysely)
+- [Typebox](https://github.com/sinclairzx81/typebox)
+- [ts-belt](https://github.com/mobily/ts-belt)
+- [Nx-Flutter](https://www.npmjs.com/package/@nxrocks/nx-flutter)
+
+## Getting Started
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/zero-one-group/nx-flutter-fastify-terraform
+   ```
+2. Install packages
+   ```sh
+   yarn
+   ```
+
+### mobile
+
+Please read documentation about Flutter and [Nx-Flutter](https://www.npmjs.com/package/@nxrocks/nx-flutter)
+
+### api
+
+#### Database preparation
+
+You can set up your own postgresql or just use provided docker-compose.
+
+```sh
+docker-compose up -d db
+
+Creating api_db_1 ... done
+```
+
+Run migration by using `migrate-cli` for help `yarn migrate --help`
+
+```sh
+yarn migrate latest
+```
+
+To run the api dev server:
+
+```sh
+yarn start api
+```
+
+How to contribute on api development.
+
+1. Create your database migration file. e.g
+
+```sh
+touch ./apps/migrate-cli/src/app/migrations/$(date '+%Y%m%d%H%M%S')_users.ts
+```
+
+2. Create your database schema on api-database project. e.g
+
+```sh
+touch ./libs/api/database/src/lib/user.row.ts
+```
+
+example of the file
+
+```typescript
+import { Type, Static } from '@sinclair/typebox';
+
+export const UserRowSchema = Type.Object({
+  id: Type.String(),
+  name: Type.String(),
+  email: Type.String(),
+  password: Type.String(),
+  is_active: Type.Boolean(),
+  is_admin: Type.Boolean(),
+  last_login: Type.Union([Type.String(), Type.Null()]),
+  created_at: Type.String(),
+  updated_at: Type.String(),
+  deleted_at: Type.Union([Type.String(), Type.Null()]),
+});
+
+export type UserRow = Static<typeof UserRowSchema>;
+```
+
+don't forget to add on database.ts
+
+```typescript
+import { UserRow } from './user.row';
+
+export interface Database {
+  users: UserRow;
+}
+```

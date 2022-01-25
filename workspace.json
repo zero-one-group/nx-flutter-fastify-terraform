@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "api": "apps/api",
+    "migration-cli": "apps/migration-cli",
     "mobile": "apps/mobile"
   }
 }

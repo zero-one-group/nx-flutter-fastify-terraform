@@ -4,8 +4,11 @@
   "license": "MIT",
   "scripts": {
     "start": "nx serve",
+    "start:all": "nx run-many --parallel --target=serve --projects=mobile,api",
     "build": "nx build",
-    "test": "nx test"
+    "build:all": "nx run-many --parallel --target=build --all",
+    "test": "nx test",
+    "test:all": "nx run-many --parallel --all --target=test"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +25,7 @@
     "@nrwl/cli": "13.4.6",
     "@nrwl/eslint-plugin-nx": "13.4.6",
     "@nrwl/jest": "13.4.6",
+    "@nrwl/js": "^13.5.2",
     "@nrwl/linter": "13.4.6",
     "@nrwl/node": "^13.4.6",
     "@nrwl/tao": "13.4.6",

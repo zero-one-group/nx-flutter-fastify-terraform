@@ -1,0 +1,39 @@
+{
+  "root": "apps/migration-cli",
+  "sourceRoot": "apps/migration-cli/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/migration-cli",
+        "main": "apps/migration-cli/src/index.ts",
+        "tsConfig": "apps/migration-cli/tsconfig.app.json",
+        "assets": ["apps/migration-cli/*.md"]
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/js:node",
+      "options": {
+        "buildTarget": "migration-cli:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/migration-cli/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/migration-cli"],
+      "options": {
+        "jestConfig": "apps/migration-cli/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
