@@ -78,7 +78,7 @@ docker-compose up -d db
 Creating api_db_1 ... done
 ```
 
-Run migration by using `migrate-cli` for help `yarn migrate --help`
+Run migration by using `migration-cli` for help `yarn migrate --help`
 
 ```sh
 yarn migrate latest
@@ -95,7 +95,7 @@ How to contribute on api development.
 1. Create your database migration file. e.g
 
 ```sh
-touch ./apps/migrate-cli/src/app/migrations/$(date '+%Y%m%d%H%M%S')_users.ts
+touch ./apps/migration-cli/src/app/migrations/$(date '+%Y%m%d%H%M%S')_users.ts
 ```
 
 2. Create your database schema on api-database project. e.g
@@ -107,7 +107,9 @@ touch ./libs/api/database/src/lib/user.row.ts
 example of the file
 
 ```typescript
-import { Type, Static } from '@sinclair/typebox';
+import { Static, Type } from '@sinclair/typebox';
+
+import { Nullable } from './generics';
 
 export const UserRowSchema = Type.Object({
   id: Type.String(),
@@ -116,10 +118,10 @@ export const UserRowSchema = Type.Object({
   password: Type.String(),
   is_active: Type.Boolean(),
   is_admin: Type.Boolean(),
-  last_login: Type.Union([Type.String(), Type.Null()]),
+  last_login: Nullable(Type.String()),
   created_at: Type.String(),
   updated_at: Type.String(),
-  deleted_at: Type.Union([Type.String(), Type.Null()]),
+  deleted_at: Nullable(Type.String()),
 });
 
 export type UserRow = Static<typeof UserRowSchema>;
