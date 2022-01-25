@@ -67,7 +67,7 @@ Read all / follow the resources
 
 - Please read documentation about Flutter and [Nx-Flutter](https://www.npmjs.com/package/@nxrocks/nx-flutter)
 - ZOG example flutter app on Nx https://github.com/zero-one-group/ionic-react-native-flutter
-- ZOG Blog about Hybrid App comparison on Nx https://github.com/zero-one-group/ionic-react-native-flutter
+- ZOG Blog about Hybrid App comparison on Nx https://medium.com/@zeroonegroup/ionic-react-native-and-flutter-in-one-nx-monorepo-ff58196a0125
 
 ### api
 
