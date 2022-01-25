@@ -49,6 +49,12 @@ Please Read all the documentation first before getting started.
 - [ts-belt](https://github.com/mobily/ts-belt)
 - [Nx-Flutter](https://www.npmjs.com/package/@nxrocks/nx-flutter)
 
+Read all / follow the resources
+
+- course: https://egghead.io/courses/scale-react-development-with-nx-4038
+- book: https://cdn2.hubspot.net/hubfs/2757427/effective-react-with-nx-preview.v0.5.pdf
+- folder_structure: https://nx.dev/guides/monorepo-nx-enterprise
+
 ## Getting Started
 
 ### Installation
