@@ -67,6 +67,10 @@ Read all / follow the resources
    ```sh
    yarn
    ```
+3. Build all node packages
+   ```sh
+   yarn build:all
+   ```
 
 ### mobile
 
