@@ -34,6 +34,7 @@ Please Read all the documentation first before getting started.
 
 - [Nx](https://nx.dev/)
 - [Nx-Node](https://nx.dev/node)
+- [Fastify](https://www.fastify.io/)
 - [Kysely 0.14.1](https://github.com/koskimas/kysely/tree/0.14.1)
 - [Typebox](https://github.com/sinclairzx81/typebox)
 - [ts-belt](https://github.com/mobily/ts-belt)
