@@ -4,15 +4,6 @@ This project was generated using [Nx](https://nx.dev).
 
 🔎 **Smart, Fast and Extensible Build System**
 
-<br />
-<p align="center">
-  <h3 align="center">Flutter with Fastify on Nx</h3>
-
-  <p align="center">
-  	An Example Monorepo Project
-  </p>
-</p>
-
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
@@ -42,7 +33,6 @@ This project was generated using [Nx](https://nx.dev).
 Please Read all the documentation first before getting started.
 
 - [Nx](https://nx.dev/)
-- [Nx-React](https://nx.dev/react)
 - [Nx-Node](https://nx.dev/node)
 - [Kysely 0.14.1](https://github.com/koskimas/kysely/tree/0.14.1)
 - [Typebox](https://github.com/sinclairzx81/typebox)
