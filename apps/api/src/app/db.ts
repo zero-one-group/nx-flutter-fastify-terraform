@@ -1,8 +1,5 @@
 import { Kysely, PostgresDialect } from 'kysely';
-
-export interface Database {
-  users: string;
-}
+import { Database } from '@nx-flutter-fastify-terraform/api/database';
 
 export function connectDatabase(connectionString: string) {
   return new Kysely<Database>({

@@ -8,7 +8,7 @@ import { connectDatabase } from './app/db';
 import { environment } from './environments/environment';
 import { cors, swagger } from './plugins';
 
-import { Database } from './app/db';
+import { Database } from '@nx-flutter-fastify-terraform/api/database';
 
 const buildServer = (db: Kysely<Database>) => {
   const server = fastify({

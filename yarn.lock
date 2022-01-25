@@ -3592,10 +3592,10 @@ kleur@^3.0.3:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
-kysely@^0.16.8:
-  version "0.16.8"
-  resolved "https://registry.yarnpkg.com/kysely/-/kysely-0.16.8.tgz#74678a7fcc9fbe41cd37ffa1252eb1863ebcf2dd"
-  integrity sha512-DPCvvNUNG9D+I5yji8pnRDqQimPVN0Qpl3iXVisliOkwLDGoMYC3YVvrxFeWyBuvmsYQl0q82wRvq/SHBiT8bQ==
+kysely@^0.14.0:
+  version "0.14.1"
+  resolved "https://registry.yarnpkg.com/kysely/-/kysely-0.14.1.tgz#64933cdfed99134d9b423dd3fc024200b7f362de"
+  integrity sha512-EcmOmq/TSlJ7XW2ZfjIEC5Ubmg2CUOKHUhUjn+L+qU44olyFkS4ZnIKxBIgd3lf8S5N2vtPd5NmB9Z0QqUZFAQ==
   dependencies:
     "@types/node" "^16.11.9"
 
@@ -4817,6 +4817,11 @@ tree-kill@1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/tree-kill/-/tree-kill-1.2.2.tgz#4ca09a9092c88b73a7cdc5e8a01b507b0790a0cc"
   integrity sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==
+
+ts-expect@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/ts-expect/-/ts-expect-1.3.0.tgz#3f8d3966e0e22b5e2bb88337eb99db6816a4c1cf"
+  integrity sha512-e4g0EJtAjk64xgnFPD6kTBUtpnMVzDrMb12N1YZV0VvSlhnVT3SGxiYTLdGy8Q5cYHOIC/FAHmZ10eGrAguicQ==
 
 ts-jest@27.0.5:
   version "27.0.5"

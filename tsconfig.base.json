@@ -19,6 +19,10 @@
       "@nx-flutter-fastify-terraform/api/database": [
         "libs/api/database/src/index.ts"
       ],
+      "@nx-flutter-fastify-terraform/api/shared": [
+        "libs/api/shared/src/index.ts"
+      ],
+      "@nx-flutter-fastify-terraform/api/user": ["libs/api/user/src/index.ts"],
       "@nx-flutter-fastify-terraform/helper/result": [
         "libs/helper/result/src/index.ts"
       ]

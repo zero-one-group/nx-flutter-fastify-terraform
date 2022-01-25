@@ -1,9 +1,4 @@
-import {
-  Kysely,
-  Migrator,
-  PostgresDialect,
-  FileMigrationProvider,
-} from 'kysely';
+import { Kysely, PostgresDialect } from 'kysely';
 import * as path from 'path';
 import type { CommandBuilder } from 'yargs';
 
@@ -32,16 +27,9 @@ export async function migrateToLatest() {
   const db = new Kysely({
     dialect: new PostgresDialect(pgOptions),
   });
-
-  const migrator = new Migrator({
-    db,
-    provider: new FileMigrationProvider(
-      // Path to the folder that contains all your migrations.
-      path.join(__dirname, 'migrations')
-    ),
-  });
-
-  const { error, results } = await migrator.migrateToLatest();
+  const { error, results } = await db.migration.migrateToLatest(
+    path.join(__dirname, 'migrations')
+  );
 
   // Destroy the `Kysely` instance to make the script exit faster.
   await db.destroy();

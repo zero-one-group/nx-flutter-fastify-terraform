@@ -4,6 +4,8 @@
     "api": "apps/api",
     "api-auth": "libs/api/auth",
     "api-database": "libs/api/database",
+    "api-shared": "libs/api/shared",
+    "api-user": "libs/api/user",
     "helper-result": "libs/helper/result",
     "migration-cli": "apps/migration-cli",
     "mobile": "apps/mobile"

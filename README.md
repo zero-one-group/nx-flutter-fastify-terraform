@@ -44,7 +44,7 @@ Please Read all the documentation first before getting started.
 - [Nx](https://nx.dev/)
 - [Nx-React](https://nx.dev/react)
 - [Nx-Node](https://nx.dev/node)
-- [Kysely](https://github.com/koskimas/kysely)
+- [Kysely 0.14.1](https://github.com/koskimas/kysely/tree/0.14.1)
 - [Typebox](https://github.com/sinclairzx81/typebox)
 - [ts-belt](https://github.com/mobily/ts-belt)
 - [Nx-Flutter](https://www.npmjs.com/package/@nxrocks/nx-flutter)
@@ -64,7 +64,9 @@ Please Read all the documentation first before getting started.
 
 ### mobile
 
-Please read documentation about Flutter and [Nx-Flutter](https://www.npmjs.com/package/@nxrocks/nx-flutter)
+- Please read documentation about Flutter and [Nx-Flutter](https://www.npmjs.com/package/@nxrocks/nx-flutter)
+- ZOG example flutter app on Nx https://github.com/zero-one-group/ionic-react-native-flutter
+- ZOG Blog about Hybrid App comparison on Nx https://github.com/zero-one-group/ionic-react-native-flutter
 
 ### api
 
