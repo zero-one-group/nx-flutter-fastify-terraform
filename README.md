@@ -19,7 +19,7 @@ This project was generated using [Nx](https://nx.dev).
     </li>
     <li><a href="#usage">Usage</a>
       <ul>
-        <li><a href="#mobile">omnichannel</a></li>
+        <li><a href="#mobile">mobile</a></li>
         <li><a href="#api">api</a></li>
       </ul>
     </li>
