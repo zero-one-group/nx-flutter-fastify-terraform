@@ -12,10 +12,13 @@
   },
   "private": true,
   "dependencies": {
+    "@mobily/ts-belt": "^3.9.0",
+    "@sinclair/typebox": "^0.23.3",
     "fastify": "^3.27.0",
     "fastify-cors": "^6.0.2",
     "fastify-plugin": "^3.0.0",
     "fastify-swagger": "^4.13.1",
+    "http-status-codes": "^2.2.0",
     "kysely": "^0.16.8",
     "pg": "^8.7.1",
     "pino-pretty": "^7.5.0",

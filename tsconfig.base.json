@@ -14,7 +14,15 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-flutter-fastify-terraform/api/auth": ["libs/api/auth/src/index.ts"],
+      "@nx-flutter-fastify-terraform/api/database": [
+        "libs/api/database/src/index.ts"
+      ],
+      "@nx-flutter-fastify-terraform/helper/result": [
+        "libs/helper/result/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
