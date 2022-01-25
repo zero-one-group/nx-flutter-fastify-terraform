@@ -1,4 +1,4 @@
-# Nx Flutter FastifyT erraform
+# Nx Flutter Fastify Terraform
 
 This project was generated using [Nx](https://nx.dev).
 
